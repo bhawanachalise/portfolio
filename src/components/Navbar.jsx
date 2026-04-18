@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import s from './Navbar.module.css';
-const NAV=[{l:'Home',h:'#hero'},{l:'Services',h:'#services'},{l:'About Us',h:'#about'},{l:'My Work',h:'#work'},{l:'Blog',h:'#blogs'},{l:'Contact',h:'#contact'}];
+const NAV=[{l:'Home',h:'#hero'},{l:'Services',h:'#services'},{l:'About',h:'#about'},{l:'My Work',h:'#work'},{l:'Blog',h:'#blogs'},{l:'Contact',h:'#contact'}];
 const WA=`https://wa.me/9779817261864?text=${encodeURIComponent('Hi Bhawana, I found your portfolio.')}`;
 export default function Navbar(){
   const [sc,setSc]=useState(false);
