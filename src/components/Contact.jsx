@@ -26,7 +26,7 @@ export default function Contact(){
               ))}
             </div>
             <div className={s.socials}>
-              {[{n:'Behance',h:'https://behance.net/bhawanachalise'},{n:'LinkedIn',h:'https://www.linkedin.com/in/bhawana-chalise-/'},{n:'YouTube',h:'https://www.youtube.com/@chalisebhawana'},{n:'Facebook',h:'https://www.facebook.com/bhawana.chalise.2025'},{n:'Pinterest',h:'https://www.pinterest.com/bhawanachalise626/'}].map(s2=>(
+              {[{n:'Behance',h:'https://behance.net/bhawanachalise'},{n:'LinkedIn',h:'https://www.linkedin.com/in/bhawana-chalise-/'},{n:'YouTube',h:'https://www.youtube.com/@chalisebhawana'},{n:'Facebook',h:'https://www.facebook.com/bhawana.chalise.2025'},{n:'Pinterest',h:'https://www.pinterest.com/bhawanachalise626/'},{n:'Github',h:'https://github.com/bhawanachalise'}].map(s2=>(
                 <a key={s2.n} href={s2.h} target="_blank" rel="noreferrer" className={s.soc}>{s2.n} ↗</a>
               ))}
             </div>
