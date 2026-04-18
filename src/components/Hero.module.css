@@ -1,0 +1,60 @@
+.hero{min-height:100vh;padding-top:100px;padding-bottom:60px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.orbL{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(170,255,0,0.12) 0%,transparent 65%);top:-100px;left:-150px;filter:blur(80px);pointer-events:none}
+.orbR{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(170,255,0,0.08) 0%,transparent 65%);bottom:-80px;right:-80px;filter:blur(70px);pointer-events:none}
+
+.inner{display:grid;grid-template-columns:1fr auto 260px;gap:48px;align-items:center}
+
+/* LEFT */
+.left{display:flex;flex-direction:column;gap:1.5rem}
+.badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(170,255,0,0.08);border:1px solid rgba(170,255,0,0.2);border-radius:6px;padding:.38rem 1rem;font-family:'Space Grotesk',sans-serif;font-size:.82rem;font-weight:600;color:#aaff00;width:fit-content}
+.badgeRect{width:10px;height:10px;border:2px solid #aaff00;border-radius:2px;flex-shrink:0}
+.heading{line-height:1.05;letter-spacing:-.03em}
+.hGreen{color:#aaff00;display:block}
+.sub{font-family:'Inter',sans-serif;font-size:.95rem;color:#5a7a5a;line-height:1.8;max-width:440px}
+.btns{display:flex;gap:.85rem;flex-wrap:wrap}
+.tagRow{display:flex;gap:.6rem;flex-wrap:wrap}
+.floatTag{font-family:'Space Grotesk',sans-serif;font-size:.72rem;font-weight:600;color:#aaff00;background:rgba(170,255,0,0.08);border:1px solid rgba(170,255,0,0.18);border-radius:4px;padding:.28rem .75rem;letter-spacing:.04em}
+
+/* PHOTO COL */
+.photoCol{position:relative;display:flex;align-items:flex-end;justify-content:center;width:320px}
+.circleWrap{position:relative;width:300px;height:380px}
+.circle{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:260px;height:260px;border-radius:50%;background:#aaff00;z-index:0}
+.photo{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:280px;height:360px;object-fit:cover;object-position:center top;z-index:1;border-radius:8px 8px 0 0}
+
+/* Floating labels on photo */
+.floatLabel{position:absolute;z-index:2;display:inline-flex;align-items:center;gap:.45rem;background:rgba(10,15,10,0.88);border:1px solid rgba(170,255,0,0.3);border-radius:6px;padding:.38rem .85rem;font-family:'Space Grotesk',sans-serif;font-size:.72rem;font-weight:600;color:#aaff00;backdrop-filter:blur(8px);box-shadow:0 4px 16px rgba(0,0,0,.4);white-space:nowrap}
+.fl1{top:40px;right:-20px}
+.fl2{bottom:100px;left:-20px}
+
+.flDot{width:6px;height:6px;border-radius:50%;background:#aaff00;flex-shrink:0}
+
+/* Rotating ring */
+.ring{position:absolute;top:20px;right:-24px;width:100px;height:100px}
+.ringC{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:#0a0f0a;border:1px solid rgba(170,255,0,0.25);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#aaff00}
+
+/* RIGHT stats */
+.right{display:flex;flex-direction:column;gap:1rem}
+.statCard{background:rgba(15,26,15,0.7);border:1px solid rgba(170,255,0,0.1);border-radius:12px;padding:1.3rem 1.2rem;backdrop-filter:blur(12px);transition:border-color .2s}
+.statCard:hover{border-color:rgba(170,255,0,0.25)}
+.statVal{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:#aaff00;line-height:1;letter-spacing:-.03em}
+.statLabel{font-family:'Inter',sans-serif;font-size:.7rem;color:#5a7a5a;text-transform:uppercase;letter-spacing:.08em;margin-top:.3rem}
+
+@media(max-width:1000px){
+  .inner{grid-template-columns:1fr 240px;gap:32px}
+  .right{display:none}
+  .photoCol{width:240px}
+  .circleWrap{width:220px;height:290px}
+  .circle{width:200px;height:200px}
+  .photo{width:210px;height:270px}
+  .fl1{right:-10px}.fl2{left:-10px}
+}
+@media(max-width:700px){
+  .inner{grid-template-columns:1fr;gap:2rem}
+  .photoCol{width:200px;margin:0 auto}
+  .circleWrap{width:200px;height:260px}
+  .circle{width:180px;height:180px}
+  .photo{width:185px;height:240px}
+  .fl1,.fl2{display:none}
+  .ring{display:none}
+  .btns{flex-direction:column}
+}

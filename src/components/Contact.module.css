@@ -1,0 +1,30 @@
+.sec{position:relative}
+.bg{position:absolute;inset:0;background:rgba(10,26,10,0.5);z-index:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.left{display:flex;flex-direction:column;gap:1.3rem}
+.desc{font-family:'Inter',sans-serif;font-size:.9rem;color:#5a7a5a;line-height:1.8}
+.checks{display:flex;flex-direction:column;gap:.6rem}
+.check{display:flex;align-items:center;gap:.6rem;font-family:'Inter',sans-serif;font-size:.85rem;color:#c8e0c8}
+.chk{width:20px;height:20px;border-radius:50%;background:#aaff00;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:#0a0f0a;flex-shrink:0}
+.socials{display:flex;flex-wrap:wrap;gap:.5rem}
+.soc{font-family:'Space Grotesk',sans-serif;font-size:.75rem;font-weight:600;color:#5a7a5a;padding:.3rem .8rem;border:1px solid rgba(170,255,0,0.12);border-radius:6px;transition:all .2s}
+.soc:hover{color:#aaff00;border-color:rgba(170,255,0,0.3)}
+
+.waCard{overflow:hidden}
+.waHead{background:#aaff00;padding:13px 16px;display:flex;align-items:center;gap:10px}
+.waAv{width:38px;height:38px;border-radius:50%;background:rgba(10,15,10,0.2);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;color:#0a0f0a;flex-shrink:0}
+.waName{font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:700;color:#0a0f0a}
+.waSt{font-family:'Inter',sans-serif;font-size:.7rem;color:rgba(10,15,10,0.6);display:flex;align-items:center;gap:4px;margin-top:1px}
+.waDot{width:6px;height:6px;border-radius:50%;background:#0a0f0a;opacity:.6;flex-shrink:0}
+.waBody{padding:14px;background:rgba(10,20,10,0.5)}
+.waBub{background:rgba(15,26,15,0.9);border:1px solid rgba(170,255,0,0.1);border-radius:3px 10px 10px 10px;padding:9px 12px;font-family:'Inter',sans-serif;font-size:.83rem;color:#c8e0c8;line-height:1.6;margin-bottom:10px}
+.waHint{font-family:'Inter',sans-serif;font-size:.65rem;font-weight:700;color:#2a3a2a;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+.waItems{display:flex;flex-direction:column;gap:5px}
+.waItem{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;background:rgba(15,26,15,0.8);border:1px solid rgba(170,255,0,0.1);border-radius:8px;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500;color:#c8e0c8;transition:all .2s;text-decoration:none}
+.waItem:hover{border-color:rgba(170,255,0,0.28);color:#aaff00}
+.waArr{font-size:.75rem;color:#2a3a2a;transition:color .2s}
+.waItem:hover .waArr{color:#aaff00}
+.waFoot{padding:10px 14px;border-top:1px solid rgba(170,255,0,0.1)}
+.waCta{display:flex;align-items:center;justify-content:center;gap:7px;padding:10px;background:#25d366;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;color:#fff;text-decoration:none;transition:background .2s}
+.waCta:hover{background:#22c45e}
+@media(max-width:900px){.grid{grid-template-columns:1fr;gap:2.5rem}}
