@@ -10,8 +10,8 @@
   --green2:  #88cc00;
   --green-d: rgba(170,255,0,0.12);
   --green-b: rgba(170,255,0,0.22);
-  --white:   #f5fff5;
-  --text:    #c8e0c8;
+  --white:   #deffde;
+  --text:    #e1ffe1;
   --muted:   #5a7a5a;
   --dim:     #2a3a2a;
   --border:  rgba(170,255,0,0.1);
@@ -45,10 +45,10 @@ img{display:block}
   content:'';position:absolute;
   top:-60px;left:-60px;right:-60px;bottom:-60px;
   background-image:
-    linear-gradient(rgba(170,255,0,0.04) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(170,255,0,0.04) 1px,transparent 1px);
-  background-size:60px 60px;
-  animation:gMove 20s linear infinite;
+    linear-gradient(rgba(23, 35, 0, 0.68) 0.5px,transparent 0.2px),
+    linear-gradient(90deg,rgba(23, 35, 0, 0.683)0.5px,transparent 0.5px);
+  background-size:40px 40px;
+  animation:gMove 15s linear infinite;
 }
 .grid-bg::after{
   content:'';position:absolute;inset:0;

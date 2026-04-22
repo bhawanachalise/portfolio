@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Ticker.module.css';
-const ITEMS=['App Design','Web Design',,'Logo Design',,'Social Media','Product Design','Branding','App Design',,'Web Design','Logo Design','Social Media','Product Design','Branding','App Design','App Design','Web Design',,'Logo Design',,'Social Media','Product Design','Branding',];
+const ITEMS=['App Design','Web Design',,'Logo Design',,'Social Media','Product Design','Branding','App Design',,'Web Design','Logo Design','Social Media','Product Design','Branding','App Design','Web Design',,'Logo Design',,'Social Media','Product Design','Branding',];
 export default function Ticker(){
   return(
     <div className={s.ticker} aria-hidden="true">

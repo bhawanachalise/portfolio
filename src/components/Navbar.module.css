@@ -1,7 +1,7 @@
 .nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:0 88px;height:70px;background:rgba(10,15,10,0);backdrop-filter:blur(0px);border-bottom:1px solid transparent;transition:all .3s}
 .sc{background:rgba(10,15,10,0.92);backdrop-filter:blur(20px);border-bottom-color:rgba(170,255,0,0.1)}
 .logo{display:flex;align-items:center;gap:.55rem;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;color:#f5fff5;letter-spacing:-.01em}
-.logoBox{width:28px;height:28px;border-radius:6px;background:#aaff00;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;color:#0a0f0a;flex-shrink:0}
+.logoBox{width:28px;height:28px;border-radius:2px;background:#aaff00;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;color:#001c00;flex-shrink:0}
 .links{display:flex;gap:2px;list-style:none}
 .link{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500;color:#5a7a5a;padding:.4rem .85rem;border-radius:6px;transition:all .2s}
 .link:hover{color:#aaff00;background:rgba(170,255,0,0.07)}

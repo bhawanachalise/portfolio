@@ -22,9 +22,9 @@
 .waItems{display:flex;flex-direction:column;gap:5px}
 .waItem{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;background:rgba(15,26,15,0.8);border:1px solid rgba(170,255,0,0.1);border-radius:8px;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:500;color:#c8e0c8;transition:all .2s;text-decoration:none}
 .waItem:hover{border-color:rgba(170,255,0,0.28);color:#aaff00}
-.waArr{font-size:.75rem;color:#2a3a2a;transition:color .2s}
+.waArr{font-size:.75rem;color:#021e02;transition:color .2s}
 .waItem:hover .waArr{color:#aaff00}
 .waFoot{padding:10px 14px;border-top:1px solid rgba(170,255,0,0.1)}
-.waCta{display:flex;align-items:center;justify-content:center;gap:7px;padding:10px;background:#25d366;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;color:#fff;text-decoration:none;transition:background .2s}
+.waCta{display:flex;align-items:center;justify-content:center;gap:7px;padding:10px;background:#25d366;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;color:#fffafa;text-decoration:none;transition:background .2s}
 .waCta:hover{background:#22c45e}
 @media(max-width:900px){.grid{grid-template-columns:1fr;gap:2.5rem}}

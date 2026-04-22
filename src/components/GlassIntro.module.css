@@ -1,0 +1,145 @@
+.intro{
+  position:fixed;inset:0;z-index:1000;
+  cursor:pointer;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* Blurred background to peek through */
+.bgBlur{
+  position:absolute;inset:0;z-index:0;
+  background:linear-gradient(135deg,#051F20 0%,#0B2B26 35%,#163832 65%,#051F20 100%);
+  filter:blur(0px);
+}
+
+/* SVG takes full screen */
+.glassSvg{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  z-index:2;pointer-events:none;
+}
+
+/* ── GLASS SHARDS ── */
+.shard{
+  fill:rgba(218,241,222,0.08);
+  stroke:#DAF1DE;
+  stroke-width:0.5;
+  stroke-opacity:0.25;
+  filter:drop-shadow(0 0 8px rgba(218,241,222,0.15));
+  transition:none;
+  transform-origin:720px 480px;
+}
+
+/* Frosted glass texture per shard */
+.shard:nth-child(odd){
+  fill:rgba(142,182,155,0.1);
+}
+.shard:nth-child(3n){
+  fill:rgba(35,83,71,0.15);
+}
+
+/* ── CRACK LINES ── */
+.cracks line,.cracks circle{transition:none}
+.breaking .cracks line{
+  animation:crackReveal .35s ease-out forwards;
+}
+.breaking .cracks line:nth-child(1){animation-delay:0s}
+.breaking .cracks line:nth-child(2){animation-delay:.04s}
+.breaking .cracks line:nth-child(3){animation-delay:.07s}
+.breaking .cracks line:nth-child(4){animation-delay:.03s}
+.breaking .cracks line:nth-child(5){animation-delay:.08s}
+.breaking .cracks line:nth-child(6){animation-delay:.05s}
+.breaking .cracks line:nth-child(7){animation-delay:.06s}
+.breaking .cracks circle{animation:impactFlash .3s ease-out forwards}
+
+@keyframes crackReveal{
+  0%{stroke-opacity:0;stroke-width:0}
+  30%{stroke-opacity:0.9;stroke-width:1.5}
+  100%{stroke-opacity:0.7;stroke-width:1}
+}
+@keyframes impactFlash{
+  0%{r:0;fill-opacity:1}
+  50%{r:18;fill-opacity:0.8}
+  100%{r:30;fill-opacity:0}
+}
+
+/* Glass fill flicker before break */
+.glassFill{transition:fill-opacity .2s}
+.breaking .glassFill{animation:glassPulse .3s ease-out}
+@keyframes glassPulse{0%{fill-opacity:1}40%{fill-opacity:0.4}70%{fill-opacity:0.9}100%{fill-opacity:0.7}}
+
+/* ── SHARD FLY ANIMATION ── */
+.breaking .shard{
+  animation:shardFly .9s cubic-bezier(.25,.46,.45,.94) var(--delay) forwards;
+}
+@keyframes shardFly{
+  0%{
+    transform:translate(0,0) rotate(0deg);
+    opacity:1;
+    filter:drop-shadow(0 0 12px rgba(218,241,222,0.4));
+  }
+  15%{
+    filter:drop-shadow(0 0 28px rgba(218,241,222,0.8));
+    opacity:1;
+  }
+  100%{
+    transform:translate(var(--tx),var(--ty)) rotate(var(--rot));
+    opacity:0;
+    filter:drop-shadow(0 0 4px rgba(218,241,222,0));
+  }
+}
+
+/* Sheen */
+.sheen{pointer-events:none}
+
+/* ── CENTER CONTENT ON GLASS ── */
+.center{
+  position:relative;z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:1.6rem;
+  opacity:0;transition:opacity .6s ease;
+  pointer-events:none;
+  text-align:center;
+}
+.hintVisible{opacity:1}
+.breaking .center{opacity:0!important;transition:opacity .2s}
+
+.nameTag{
+  display:flex;align-items:center;gap:1rem;
+  background:rgba(11,43,38,0.7);
+  border:1px solid rgba(142,182,155,0.3);
+  border-radius:50px;
+  padding:.7rem 1.6rem .7rem .7rem;
+  backdrop-filter:blur(20px);
+}
+.initials{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,#235347,#163832);
+  border:2px solid #8EB69B;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:1.1rem;font-weight:800;color:#DAF1DE;
+  box-shadow:0 0 20px rgba(142,182,155,0.3);
+}
+.name{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:.95rem;font-weight:700;color:#DAF1DE;
+}
+.role{
+  font-family:'Inter',sans-serif;
+  font-size:.72rem;color:#8EB69B;margin-top:.15rem;
+}
+
+.tapHint{
+  display:flex;align-items:center;gap:.6rem;
+  font-family:'Inter',sans-serif;font-size:.75rem;color:#8EB69B;
+  position:relative;
+}
+.tapRing{
+  position:absolute;left:-24px;top:50%;transform:translateY(-50%);
+  width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(142,182,155,0.4);
+  animation:ringPulse 2s ease-in-out infinite;
+}
+@keyframes ringPulse{
+  0%,100%{transform:translateY(-50%) scale(1);opacity:.6}
+  50%{transform:translateY(-50%) scale(1.4);opacity:0}
+}

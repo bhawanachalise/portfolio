@@ -13,6 +13,6 @@
 .cardFoot{display:flex;align-items:center;justify-content:space-between;margin-top:.4rem}
 .readMore{display:inline-flex;align-items:center;gap:.4rem;font-family:'Space Grotesk',sans-serif;font-size:.82rem;font-weight:600;color:#aaff00;transition:gap .2s}
 .readMore:hover{gap:.7rem}
-.tool{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;color:#2a3a2a;background:rgba(170,255,0,0.05);border:1px solid rgba(170,255,0,0.1);padding:.2rem .6rem;border-radius:4px}
+.tool{font-family:'Inter',sans-serif;font-size:.68rem;font-weight:600;color:#5a7a5a;background:rgba(170,255,0,0.05);border:1px solid rgba(71, 107, 0, 0.1);padding:.2rem .6rem;border-radius:4px}
 @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}

@@ -21,7 +21,7 @@ export default function Contact(){
             <h2 className="h2">Have An Awesome Project<br/>Idea? <span className="g">Let's Discuss</span></h2>
             <p className={s.desc}>Ready to bring your vision to life? I'm available for freelance projects worldwide. Let's create something amazing together!</p>
             <div className={s.checks}>
-              {['Quick Response','100% Satisfaction'].map(c=>(
+              {['Quick Response',].map(c=>(
                 <div key={c} className={s.check}><span className={s.chk}>✓</span>{c}</div>
               ))}
             </div>
