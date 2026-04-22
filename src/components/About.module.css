@@ -13,4 +13,17 @@
 .sv{font-family:'Space Grotesk',sans-serif;font-size:1.8rem;font-weight:700;color:#aaff00;letter-spacing:-.03em;line-height:1}
 .sl{font-family:'Inter',sans-serif;font-size:.68rem;color:#5a7a5a;text-transform:uppercase;letter-spacing:.08em}
 .sdiv{width:1px;height:40px;background:rgba(170,255,0,0.1)}
-@media(max-width:900px){.grid{grid-template-columns:1fr;gap:2.5rem}.photoWrap{width:280px;margin:0 auto}}
+
+
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr;gap:2.5rem}
+  .pw{width:280px;margin:0 auto}
+  /* Hide photo on mobile — Hero already shows it above */
+  .ps{display:none}
+}
+@media(max-width:600px){
+  .sec{padding:60px 20px}
+  .content{align-items:flex-start}
+  .stats{gap:1.2rem}
+}
