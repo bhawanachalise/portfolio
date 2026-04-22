@@ -19,8 +19,8 @@ export default function Hero(){
               <span className={s.badgeRect}/>Hello There
             </div>
             <h1 className={`h1 ${s.heading} fu d2`}>
-              Creative Graphic &<br/>
-              <span className={s.hGreen}>UI Designer</span>
+              Creative Graphic<br/>
+              <span className={s.hGreen}> & UI Designer</span>
             </h1>
             <p className={`${s.sub} fu d3`}>
               Helping brands grow through eye-catching graphics, user-friendly UI, and strategic design.
