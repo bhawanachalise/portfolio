@@ -6,7 +6,7 @@ const WORKS=[
   
   {n:'01',title:'Social Media Post Design',sub:'Skincare · Travel · IT Company',tool:'Photoshop',tags:['Social Media']},
   {n:'02',title:'Logo Design',sub:'Brand Identity & Mark',tool:'Illustrator',tags:['Branding','Identity']},
-  {n:'03',title:'Brochure',sub:'',tool:'Indesign',tags:['Brand Identity']},
+  {n:'03',title:'Brochure Design',sub:'',tool:'Indesign',tags:['Brand Identity']},
   {n:'04',title:'Web Design',sub:'Responsive Website Design',tool:'Figma',tags:['Web','Responsive']},
   {n:'05',title:'App Design',sub:'Mobile UI/UX Design',tool:'Figma',tags:['Mobile','App']},
   {n:'06',title:'Product Design',sub:'End-to-end Digital Product',tool:'Figma',tags:['Product','System']},
