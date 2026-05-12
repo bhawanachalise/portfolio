@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './Services.module.css';
 const SVCS=[
-  {icon:'🎨',title:'Social Media Design',desc:'Scroll-stopping posts for skincare brands, travel agencies & IT companies. Designed to convert and grow your audience.',tool:'Photoshop'},
-  {icon:'✦',title:'Logo Design',desc:'Clean, memorable logos that build powerful brand identity and make you stand out from the competition.',tool:'Illustrator'},
+  {icon:'🎨',title:'Social Media Design',desc:'Eye-catching posts and graphics for skincare, travel, and tech brands — designed to engage your audience and grow your following.',tool:'Photoshop'},
+  {icon:'✦',title:'Logo Design',desc:'Clean, memorable logos that communicate your brands identity clearly and help you stand out from the competition.',tool:'Illustrator'},
   
-  {icon:'🌐',title:'Web Design',desc:'We craft responsive, modern websites that look great and perform flawlessly across all devices.',tool:'Figma'},
-  {icon:'📲',title:'App Design',desc:'We design sleek, user-friendly mobile apps that deliver smooth experiences and keep users engaged.',tool:'Figma'},
-  {icon:'📦',title:'Product Design',desc:'End-to-end digital product design from wireframes to high-fidelity prototypes with full design systems.',tool:'Figma'},
+  {icon:'🌐',title:'Web Design',desc:'Modern, responsive websites that look great and work seamlessly across all screen sizes and devices.',tool:'Figma'},
+  {icon:'📲',title:'App Design',desc:'Clean and intuitive mobile app interfaces that deliver a smooth user experience and keep people engaged.',tool:'Figma'},
+  {icon:'📦',title:'Product Design',desc:'From wireframes to prototypes — clean, structured design that is ready to build.',tool:'Figma'},
 ];
 export default function Services(){
   return(
