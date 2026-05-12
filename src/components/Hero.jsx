@@ -73,8 +73,8 @@ export default function Hero(){
               <div className={s.statLabel}>Happy Clients</div>
             </div>
             <div className={s.statCard}>
-              <div className={s.statVal}>300+</div>
-              <div className={s.statLabel}>Posts Designed</div>
+              <div className={s.statVal}>400+</div>
+              <div className={s.statLabel}>Social Media Post Designed</div>
             </div>
             <div className={s.statCard}>
               <div className={s.statVal}>3+</div>
