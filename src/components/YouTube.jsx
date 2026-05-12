@@ -1,19 +1,10 @@
 import React from 'react';
 import s from './YouTube.module.css';
-
-const VID=[{
-  title:'Easy Liquify Filter in Photoshop',
-  link:'link:https://www.youtube.com/watch?v=nfsmSpYFErA'
-
-  
-}];
-
- 
+const YT='https://www.youtube.com/@chalisebhawana';
 const VID=[
-  {title:'Body Shape Correction in Photoshop',
-    link:'https://www.youtube.com/shorts/JniIWyScwBs'
-  },
-  
+  {title:'Easy Liquify Filter in Photoshop'},
+  {title:'Create Stunning Backgrounds in Photoshop',},
+  {title:'Body Shape Correction in Photoshop',},
 ];
 export default function YouTube(){
   return(
