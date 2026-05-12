@@ -1,10 +1,16 @@
 import React from 'react';
 import s from './YouTube.module.css';
-const YT='https://www.youtube.com/@chalisebhawana';
+const YT='https://www.youtube.com/shorts/nfsmSpYFErA';
 const VID=[
   {title:'Easy Liquify Filter in Photoshop'},
-  {title:'Create Stunning Backgrounds in Photoshop',},
+  
+];
+
+  
+  const YT='https://www.youtube.com/shorts/JniIWyScwBs';
+const VID=[
   {title:'Body Shape Correction in Photoshop',},
+  
 ];
 export default function YouTube(){
   return(
